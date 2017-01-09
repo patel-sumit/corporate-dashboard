@@ -1,3 +1,9 @@
+**Corporate-Dashboard**
+
+Corporate dashboard is created in angular js
+It contain three views 
+Chart view,Dataview,GeoLocation view
+
 ## Prerequisites
 
 ### [Node.js](https://nodejs.org)
