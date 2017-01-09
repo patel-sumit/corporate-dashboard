@@ -1,0 +1,15 @@
+<br/>
+  <div class="row" ng-view>
+    <div class="col-lg-11">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <i class="fa fa-map-marker fa-fw"></i>Number of employees at various company locations
+        </div>
+        <div class="panel-body">
+          <div id="map" ></div>
+          <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+            <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+          </div>
+        </div>
+      </div></div>
+  </div>

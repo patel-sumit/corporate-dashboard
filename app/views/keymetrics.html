@@ -1,0 +1,56 @@
+<br>
+<br>
+<div class="row" >
+  <div class="col-md-2" >
+    <div class="info-tile tile-orange" style="visibility: visible; opacity: 1; display: block; transform: translateY(0px);">
+      <div class="tile-icon"><i class="ti ti-shopping-cart-full"></i></div>
+      <div class="tile-heading"><span>Open Issues</span></div>
+      <div class="tile-body" ng-model-options=""><span>{{dashboard.cntOpenIssues}}</span></div>
+</div>
+  </div>
+</div>
+<div class="row" ng-view>
+  <div class="col-lg-11">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <i class="fa fa-line-chart fa-fw"></i> Month wise paying customers
+      </div>
+      <div class="panel-body">
+        <div >
+          <div class="chart-container" >
+            <canvas id="myChart" class="chart chart-line" chart-data="dashboard.lineChart.data"
+                    chart-labels="dashboard.lineChart.labels">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" ng-view>
+  <div class="col-lg-11">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <i class="fa fa-bar-chart-o fa-fw"></i>  Month wise reported issues
+      </div>
+      <div class="panel-body">
+        <div >
+          <div class="chart-container" >
+            <canvas id="myBarChart" class="chart chart-bar" chart-data="dashboard.barChart.data"
+                    chart-labels="dashboard.barChart.labels" >
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<br>
+<br>
+<div class="row">
+  <div class="col-lg-11">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <i class="fa fa-table fa-fw"></i> Data view
+      </div>
+      <div class="panel-body">
+        <br>
+        <input type="text" class="form-control" ng-change="refreshData()" placeholder="Search for" ng-model="searchText">
+        <br>
+        <div >
+          <div ui-grid="dashboard.gridOptions" class="grid"  ui-grid-auto-resize></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
